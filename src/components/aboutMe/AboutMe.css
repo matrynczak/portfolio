@@ -1,0 +1,180 @@
+.about-me-container {
+    min-height: 25%;
+    background-color: lightgreen;
+    padding: 5vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.about-me-image {
+    background-image: url('../../images/about-me-image.jpg');
+    background-size: cover;
+    height: 45vh;
+    float: left;
+    margin-right: 3vw;
+    top: -1vh;
+    position: relative;
+}
+
+.about-me-text {
+    background-color: white;
+    color: grey;
+    flex-direction: column;
+    justify-content: space-evenly;
+    height: 43vh;
+}
+
+.about-me-desc {
+    text-align: left;
+    padding: 0 2vw 0 3vw;
+    position: relative;
+    overflow: scroll;
+    height: 20vh;
+}
+
+.about-me-text h2 {
+    text-align: left;
+    padding-left: 3vw;
+    margin: 2vw;
+    font-size: xx-large;
+}
+
+.fb-icon {
+    width: 30px;
+}
+
+.li-icon {
+    width: 30px;
+}
+
+.social-media-icons {
+    display: flex;
+    justify-content: flex-end;
+    margin-right: 5vw;
+    gap: 1vw;
+    top: 43vh;
+    position: absolute;
+    width: 85%;
+}
+
+.name {
+    top: 80%;
+    position: relative;
+    font-weight: bold;
+    color: white;
+    font-size: 2vw;
+    padding: 0 1vw 2vh 1vw;
+    text-align: center;
+}
+
+@media (max-width: 768px) {
+    .about-me-container {
+        position: relative; 
+        justify-content: center;
+        padding: 0 0 20vh 0;
+        height: -moz-fit-content;
+    }
+
+    .about-me-image {
+        float: left;
+        position: relative;
+        left: -5vw;
+        width: 45vw;
+        height: 50vh;
+        top: -7vh;
+        margin: 0;
+    }
+
+    .about-me-text {
+        height: auto;
+        width: 80vw;
+        position: relative;
+        top: 10vh;
+        display: block;
+    }
+
+    .name {
+        top: 0;
+        left: 50%;
+        color: #000000b8;
+        font-size: 30px;
+        margin: 2vh 0 0 0;
+        width: 70vw;
+        text-align: left;
+    }
+
+    .social-media-icons {
+        top: 0;
+        position: relative;
+    }
+
+    .about-me-desc {
+        overflow: unset;
+        font-size: smaller;
+        height: 70vh;
+    }
+}
+
+@media (max-width: 480px) {
+    .contact-mail-info span {
+        overflow-wrap: anywhere;
+    }
+}
+
+@media (max-width: 480px) {
+    .about-me-container {
+        padding-left: 0;
+        padding-right: 0;
+        padding-bottom: 2vh;
+        padding-top: 5%;
+    }
+
+    .fb-icon, .li-icon {
+        width: 7vw;
+    }
+
+    .about-me-image {
+        position: static;
+        width: 80%;
+        display: flex;
+        justify-content: center;
+    }
+
+    .about-me-text {
+        display: flex;
+        position: static;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        background-color: lightgreen;
+        width: 100%;
+        padding: 0 2vw 0 2vw;
+    }
+
+    .about-me-desc {
+        margin: 0 0 2vh 0;
+        width: 90%;
+        font-size: smaller;
+        height: unset;
+    }
+
+    .name {
+        top: 75%;
+        color: white;
+        width: 50%;
+        margin: 0;
+        left: 0%;
+        font-size: xx-large;
+    }
+
+    .about-me-text h2 {
+        font-size: xx-large;
+        margin-top: 2vh
+    }
+
+    .social-media-icons {
+        display: flex;
+        justify-content: center;
+    }
+}
